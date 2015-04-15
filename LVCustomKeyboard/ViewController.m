@@ -7,21 +7,39 @@
 //
 
 #import "ViewController.h"
+#import "LVKeyboard.h"
 
-@interface ViewController ()
+@interface ViewController () <LVKeyboardDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+
+@property (nonatomic, strong) LVKeyboard *keyboard;
 
 @end
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    LVKeyboard *keyboard = [[LVKeyboard alloc] init];
+    keyboard.delegate = self;
+    self.keyboard = keyboard;
+    self.textField.inputView = self.keyboard;
+    
+    
+    [self.textField becomeFirstResponder];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (void)keyboard:(LVKeyboard *)keyboard didClickDeleteButton:(UIButton *)deleteBtn string:(NSMutableString *)string {
+    self.textField.text = string;
 }
+
+- (void)keyboard:(LVKeyboard *)keyboard didClickTextButton:(UIButton *)textBtn string:(NSMutableString *)string {
+    self.textField.text = string;
+}
+
 
 @end

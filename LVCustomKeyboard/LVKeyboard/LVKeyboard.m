@@ -106,20 +106,20 @@
 
 // 删除方法
 - (void)customKeyboardDidClickDeleteButton:(UIButton *)deleteBtn {
-    NSLog(@"=== >%@, %zd", self.string, self.string.length);
+
     if (self.string.length > 0) {
         [self.string deleteCharactersInRange:NSMakeRange(self.string.length - 1, 1)];
         if ([self.delegate respondsToSelector:@selector(keyboard:didClickDeleteButton:string:)]) {
             [self.delegate keyboard:self didClickDeleteButton:deleteBtn string:self.string];
         }
-        NSLog(@"%@", self.string);
     }
     
 }
 
 - (void)appendString:(UIButton *)button {
+    
     [self.string appendString:button.currentTitle];
-    NSLog(@"%@", self.string);
+    
     if ([self.delegate respondsToSelector:@selector(keyboard:didClickTextButton:string:)]) {
         [self.delegate keyboard:self didClickTextButton:button string:self.string];
     }
