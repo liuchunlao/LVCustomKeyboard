@@ -42,4 +42,8 @@
 }
 
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self.textField resignFirstResponder];
+}
+
 @end
