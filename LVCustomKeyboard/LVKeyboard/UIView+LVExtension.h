@@ -1,5 +1,5 @@
 //
-//  UIView+Extension.h
+//  UIView+LVExtension.h
 //  黑马微博2期
 //
 //  Created by apple on 14-10-7.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (Extension)
+@interface UIView (LVExtension)
 @property (nonatomic, assign) CGFloat x;
 @property (nonatomic, assign) CGFloat y;
 @property (nonatomic, assign) CGFloat width;

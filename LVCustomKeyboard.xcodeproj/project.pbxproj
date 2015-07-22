@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12B77E061B5F8CD4006EDA96 /* UIView+LVExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B77E051B5F8CD4006EDA96 /* UIView+LVExtension.m */; };
 		D993367D1ADE9CC900D1054A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D993367C1ADE9CC900D1054A /* main.m */; };
 		D99336801ADE9CC900D1054A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D993367F1ADE9CC900D1054A /* AppDelegate.m */; };
 		D99336831ADE9CC900D1054A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D99336821ADE9CC900D1054A /* ViewController.m */; };
@@ -19,7 +20,6 @@
 		D99336B01ADE9D4200D1054A /* LVLetterKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = D99336A61ADE9D4200D1054A /* LVLetterKeyboard.m */; };
 		D99336B11ADE9D4200D1054A /* LVNumberKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = D99336A81ADE9D4200D1054A /* LVNumberKeyboard.m */; };
 		D99336B21ADE9D4200D1054A /* LVSymbolKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = D99336AA1ADE9D4200D1054A /* LVSymbolKeyboard.m */; };
-		D99336B31ADE9D4200D1054A /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D99336AD1ADE9D4200D1054A /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12B77E041B5F8CD4006EDA96 /* UIView+LVExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LVExtension.h"; sourceTree = "<group>"; };
+		12B77E051B5F8CD4006EDA96 /* UIView+LVExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LVExtension.m"; sourceTree = "<group>"; };
 		D99336771ADE9CC900D1054A /* LVCustomKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LVCustomKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D993367B1ADE9CC900D1054A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D993367C1ADE9CC900D1054A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -56,8 +58,6 @@
 		D99336A81ADE9D4200D1054A /* LVNumberKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVNumberKeyboard.m; sourceTree = "<group>"; };
 		D99336A91ADE9D4200D1054A /* LVSymbolKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVSymbolKeyboard.h; sourceTree = "<group>"; };
 		D99336AA1ADE9D4200D1054A /* LVSymbolKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVSymbolKeyboard.m; sourceTree = "<group>"; };
-		D99336AC1ADE9D4200D1054A /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
-		D99336AD1ADE9D4200D1054A /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				D99336A01ADE9D4200D1054A /* LVKeyboard */,
-				D99336AB1ADE9D4200D1054A /* UIViewExtension */,
 				D993367E1ADE9CC900D1054A /* AppDelegate.h */,
 				D993367F1ADE9CC900D1054A /* AppDelegate.m */,
 				D99336811ADE9CC900D1054A /* ViewController.h */,
@@ -142,6 +141,8 @@
 		D99336A01ADE9D4200D1054A /* LVKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				12B77E041B5F8CD4006EDA96 /* UIView+LVExtension.h */,
+				12B77E051B5F8CD4006EDA96 /* UIView+LVExtension.m */,
 				D99336A11ADE9D4200D1054A /* LVKeyboard.h */,
 				D99336A21ADE9D4200D1054A /* LVKeyboard.m */,
 				D99336A31ADE9D4200D1054A /* LVKeyboardTool.h */,
@@ -154,15 +155,6 @@
 				D99336AA1ADE9D4200D1054A /* LVSymbolKeyboard.m */,
 			);
 			path = LVKeyboard;
-			sourceTree = "<group>";
-		};
-		D99336AB1ADE9D4200D1054A /* UIViewExtension */ = {
-			isa = PBXGroup;
-			children = (
-				D99336AC1ADE9D4200D1054A /* UIView+Extension.h */,
-				D99336AD1ADE9D4200D1054A /* UIView+Extension.m */,
-			);
-			path = UIViewExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +257,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D99336B31ADE9D4200D1054A /* UIView+Extension.m in Sources */,
 				D99336831ADE9CC900D1054A /* ViewController.m in Sources */,
+				12B77E061B5F8CD4006EDA96 /* UIView+LVExtension.m in Sources */,
 				D99336801ADE9CC900D1054A /* AppDelegate.m in Sources */,
 				D99336B01ADE9D4200D1054A /* LVLetterKeyboard.m in Sources */,
 				D99336AF1ADE9D4200D1054A /* LVKeyboardTool.m in Sources */,
@@ -397,10 +389,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ma Jian (9953G4MM3C)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ma Jian (9953G4MM3C)";
 				INFOPLIST_FILE = LVCustomKeyboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3808d607-3a3c-4bb7-9494-d1d7273c390f";
 			};
 			name = Debug;
 		};
@@ -408,10 +403,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ma Jian (9953G4MM3C)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ma Jian (9953G4MM3C)";
 				INFOPLIST_FILE = LVCustomKeyboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3808d607-3a3c-4bb7-9494-d1d7273c390f";
 			};
 			name = Release;
 		};
@@ -468,6 +466,7 @@
 				D993369C1ADE9CCA00D1054A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D993369D1ADE9CCA00D1054A /* Build configuration list for PBXNativeTarget "LVCustomKeyboardTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +475,7 @@
 				D993369F1ADE9CCA00D1054A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

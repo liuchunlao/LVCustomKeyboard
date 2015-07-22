@@ -1,14 +1,14 @@
 //
-//  UIView+Extension.m
+//  UIView+LVExtension.m
 //  黑马微博2期
 //
 //  Created by apple on 14-10-7.
 //  Copyright (c) 2014年 heima. All rights reserved.
 //
 
-#import "UIView+Extension.h"
+#import "UIView+LVExtension.h"
 
-@implementation UIView (Extension)
+@implementation UIView (LVExtension)
 
 - (void)setX:(CGFloat)x
 {
