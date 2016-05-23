@@ -29,6 +29,7 @@
     if (!_letterKeyboard) {
         _letterKeyboard = [[LVLetterKeyboard alloc] initWithFrame:self.bounds];
         _letterKeyboard.delegate = self;
+        _letterKeyboard.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     }
     return _letterKeyboard;
 }
