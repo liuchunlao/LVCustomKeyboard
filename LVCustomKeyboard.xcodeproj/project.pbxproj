@@ -206,6 +206,8 @@
 				TargetAttributes = {
 					D99336761ADE9CC900D1054A = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 4955MN9M7C;
+						ProvisioningStyle = Automatic;
 					};
 					D993368F1ADE9CCA00D1054A = {
 						CreatedOnToolsVersion = 6.2;
@@ -390,12 +392,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Ma Jian (9953G4MM3C)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ma Jian (9953G4MM3C)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4955MN9M7C;
 				INFOPLIST_FILE = LVCustomKeyboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3808d607-3a3c-4bb7-9494-d1d7273c390f";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -404,12 +407,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Ma Jian (9953G4MM3C)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ma Jian (9953G4MM3C)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4955MN9M7C;
 				INFOPLIST_FILE = LVCustomKeyboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3808d607-3a3c-4bb7-9494-d1d7273c390f";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

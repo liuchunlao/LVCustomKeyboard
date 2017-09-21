@@ -56,7 +56,9 @@
         NSString *text = [NSString stringWithFormat:@"%c", c];
         UIButton *symbolBtn = [LVKeyboardTool setupBasicButtonsWithTitle:text image:image highImage:highImage];
         [self addSubview:symbolBtn];
+        
         [symbolBtn addTarget:self action:@selector(symbolBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+        
         [self.symbolBtnArrM addObject:symbolBtn];
     }
     
